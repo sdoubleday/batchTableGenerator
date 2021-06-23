@@ -1,0 +1,1 @@
+﻿CREATE SCHEMA [TestHelpers] AUTHORIZATION [dbo];

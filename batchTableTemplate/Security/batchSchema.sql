@@ -1,0 +1,1 @@
+﻿CREATE SCHEMA [batchSchema] AUTHORIZATION [dbo];

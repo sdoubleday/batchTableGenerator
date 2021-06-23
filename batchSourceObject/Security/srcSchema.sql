@@ -1,0 +1,1 @@
+﻿CREATE SCHEMA [srcSchema] AUTHORIZATION [dbo];
