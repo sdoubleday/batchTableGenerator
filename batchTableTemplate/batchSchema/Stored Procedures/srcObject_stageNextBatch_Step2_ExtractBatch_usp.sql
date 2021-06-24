@@ -1,7 +1,7 @@
 ﻿CREATE PROCEDURE [batchSchema].[srcObject_stageNextBatch_Step2_ExtractBatch_usp]
 AS
 	
-	DELETE [srcSchema].[srcObject];
+	DELETE [stagedSchema].[srcObject_stg];
 
 	DECLARE @BatchId INT = NULL;
 	DECLARE @MinimumValue_Exclusive BINARY(8) = NULL;

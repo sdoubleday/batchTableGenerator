@@ -70,6 +70,8 @@
     <Folder Include="TestHelpers\Stored Procedures" />
     <Folder Include="batchSchema__srcObject_stageNextBatch_Step1_StartBatch_usp\" />
     <Folder Include="batchSchema__srcObject_stageNextBatch_Step1_StartBatch_usp\Stored Procedures" />
+    <Folder Include="batchSchema__srcObject_stageNextBatch_Step2_ExtractBatch_usp\" />
+    <Folder Include="batchSchema__srcObject_stageNextBatch_Step2_ExtractBatch_usp\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="tSQLt\Tables\Private_NullCellTable.sql" />
@@ -247,6 +249,10 @@
     <Build Include="TestHelpers\Stored Procedures\DataBuilder_batchSchema_srcObject_batches.sql" />
     <Build Include="batchSchema__srcObject_stageNextBatch_Step1_StartBatch_usp\Stored Procedures\test New Batch Max Value is NULL.sql" />
     <Build Include="batchSchema__srcObject_stageNextBatch_Step1_StartBatch_usp\Stored Procedures\test New Batch Max Value can be specified.sql" />
+    <Build Include="Security\batchSchema__srcObject_stageNextBatch_Step2_ExtractBatch_usp.sql" />
+    <Build Include="batchSchema__srcObject_stageNextBatch_Step2_ExtractBatch_usp\Stored Procedures\test First Extraction Catches Everything in Source.sql" />
+    <Build Include="batchSchema__srcObject_stageNextBatch_Step2_ExtractBatch_usp\Stored Procedures\test Extraction Stops at Specified Maximum.sql" />
+    <Build Include="batchSchema__srcObject_stageNextBatch_Step2_ExtractBatch_usp\Stored Procedures\test Extraction Respects Minimum.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assemblies\tSQLtCLR.dll" />
