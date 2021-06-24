@@ -1,4 +1,5 @@
 ﻿CREATE PROCEDURE [batchSchema].[srcObject_stageNextBatch_Step1_StartBatch_usp]
+	@CapAtMaximumValue BINARY(8) = NULL
 AS
 DECLARE @LastBatchID INT = NULL;
 DECLARE @LastMaximumValue BINARY(8) = NULL;
@@ -22,11 +23,13 @@ INSERT INTO [batchSchema].[srcObject_batches]
 (
 [BatchId]
 ,[MinimumValue_IncrementalColumnName]
+,[MaximumValue_IncrementalColumnName]
 ,[BatchStart]
 )
 VALUES (
 @NewBatchID
 ,@LastMaximumValue
+,@CapAtMaximumValue
 ,SYSUTCDATETIME()
 )
 ;
