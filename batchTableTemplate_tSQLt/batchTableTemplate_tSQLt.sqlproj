@@ -245,6 +245,8 @@
     <Build Include="batchSchema__srcObject_stageNextBatch_Step1_StartBatch_usp\Stored Procedures\test Second batch id is 2.sql" />
     <Build Include="batchSchema__srcObject_stageNextBatch_Step1_StartBatch_usp\Stored Procedures\test Second batch Min Value is first batch Max Value.sql" />
     <Build Include="TestHelpers\Stored Procedures\DataBuilder_batchSchema_srcObject_batches.sql" />
+    <Build Include="batchSchema__srcObject_stageNextBatch_Step1_StartBatch_usp\Stored Procedures\test New Batch Max Value is NULL.sql" />
+    <Build Include="batchSchema__srcObject_stageNextBatch_Step1_StartBatch_usp\Stored Procedures\test New Batch Max Value can be specified.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assemblies\tSQLtCLR.dll" />
