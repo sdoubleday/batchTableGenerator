@@ -12,3 +12,8 @@ Keeping track of all of the parts of an ETL process.
 - Version 1 supports ROWVERSION or TIMESTAMP only
 - Batch boundaries are exclusive lower (except first batch), inclusive upper.
 - Extraction has an open-ended upper bound with the maximum determined ex post facto.
+
+## Replacement Parameters
+- "IncrementalColumnName" with whatever column name is supplied as the incremental one.
+- "srcSchema" and "srcObject" with the schema and object we are extracting from.
+- "batchSchema" with the schema in which your batch tables live.
